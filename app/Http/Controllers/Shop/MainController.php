@@ -10,16 +10,18 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
 
-    public function index() {
+    public function index()
+    {
 
         $voyages = Voyage::all();
         //dd($voyages);
-       // $categories = Category::where('is_online',1)->get();
+        // $categories = Category::where('is_online',1)->get();
 
-        return view( 'shop.index',compact('voyages'));
+        return view('Shop.index', compact('voyages'));
     }
 
-    public function voyage(Request $request) {
+    public function voyage(Request $request)
+    {
 
         //echo "page voyage";
 
@@ -30,11 +32,12 @@ class MainController extends Controller
         $voyage = Voyage::find($request->id);
 
 
-        return view ('shop.voyage',compact('voyage'));
+        return view('shop.voyage', compact('voyage'));
 
     }
 
-    public function viewByCategory() {
+    public function viewByCategory()
+    {
         //Recup full categorie
 
         //$categories = Category::where('is_online',1)->get();
