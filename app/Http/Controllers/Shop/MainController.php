@@ -32,7 +32,7 @@ class MainController extends Controller
         $voyage = Voyage::find($request->id);
 
 
-        return view('shop.voyage', compact('voyage'));
+        return view('Shop.voyage', compact('voyage'));
 
     }
 
@@ -43,6 +43,6 @@ class MainController extends Controller
         //$categories = Category::where('is_online',1)->get();
         //dd($categories);
 
-        return view('shop.categorie');
+        return view('Shop.categorie');
     }
 }
