@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href=""><i class="fas fa-plane-departure"></i>&nbsp;FNAC VOYAGES</a>
+        <a class="navbar-brand" href="{{url('')}}"><i class="fas fa-plane-departure"></i>&nbsp;FNAC VOYAGES</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
                 aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

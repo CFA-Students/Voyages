@@ -1,5 +1,5 @@
 @include('layout.base.top')
 
-@yield('content')
+@yield('shop.content')
 
 @include('layout.base.bottom')
