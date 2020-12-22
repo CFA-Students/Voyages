@@ -1,8 +1,8 @@
 <footer class="text-muted py-5">
     <div class="container">
+        <a href=""><i class="fas fa-plane-departure"></i>&nbsp;FNAC VOYAGES</a>
         <p class="float-right">
-            <a href="#">Back to top</a>
+            <a href="#">Revenir en haut&nbsp;<i class="fa fa-arrow-up"></i></a>
         </p>
-        <p>Mon Voyage</p>
     </div>
 </footer>

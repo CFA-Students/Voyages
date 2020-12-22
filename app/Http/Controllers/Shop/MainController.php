@@ -17,7 +17,7 @@ class MainController extends Controller
         //dd($voyages);
         // $categories = Category::where('is_online',1)->get();
 
-        return view('Shop.index', compact('voyages'));
+        return view('home.content', compact('voyages'));
     }
 
     public function voyage(Request $request)
