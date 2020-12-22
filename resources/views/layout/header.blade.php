@@ -25,15 +25,15 @@
             {{--                </li>--}}
             {{--            </ul>--}}
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input id="search" class="form-control mr-sm-2" type="text"
-                               placeholder="Le voyage de vos rêves !">
-                        <label for="search">
-                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Rechercher</button>
-                        </label>
-                    </form>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <form class="form-inline my-2 my-lg-0">--}}
+{{--                        <input id="search" class="form-control mr-sm-2" type="text"--}}
+{{--                               placeholder="Le voyage de vos rêves !">--}}
+{{--                        <label for="search">--}}
+{{--                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Rechercher</button>--}}
+{{--                        </label>--}}
+{{--                    </form>--}}
+{{--                </li>--}}
                 <li class="nav-item">
                     <a class="nav-link" href=""><i class="fa fa-shopping-cart"></i> Panier</a>
                 </li>
