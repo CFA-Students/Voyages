@@ -17,7 +17,6 @@ Route::get('/',"Shop\MainController@index");
 
 Route::get('/voyage/{id}','Shop\MainController@voyage')->name('voir_voyage');
 
-Route::get('/categorie','Shop\MainController@viewByCategory');
+Route::get('/categorie/{id}','Shop\MainController@viewByCategory')->name('voir_produits_par_cat');
 
-
-
+Route::get('/panier/add','Shop\CartController@add')->name('cart_add');
