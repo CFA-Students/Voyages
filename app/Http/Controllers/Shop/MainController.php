@@ -10,12 +10,19 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
+        $voyages = Voyage::where([
+            ['prix_ht', '>', 1],
+            [function ($query) use ($request) {
+                if ($request->term) {
+                    return $query->where('prix_ht', '>', $request->term)->get();
+                }
+            }]
+        ]);
+//        dd($voyages);
 
         $voyages = Voyage::all();
-        //dd($voyages);
-        // $categories = Category::where('is_online',1)->get();
 
         return view('home.content', compact('voyages'));
     }
